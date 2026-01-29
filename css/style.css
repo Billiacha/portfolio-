@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.hero {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #0a2540;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background: #0a2540;
+    color: white;
+    padding: 6px;
+    border-radius: 20px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.experience-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0a2540;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+}
+
+.contact-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ffffff;
+    color: #0a2540;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #e6e6e6;
+}
+
+.contact-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#success-message {
+    font-weight: bold;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Spinner styling */
+#form-spinner {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0a2540;
+  text-align: center;
+}
+
+/* Fade-in animation for success message */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
